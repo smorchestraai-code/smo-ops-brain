@@ -1,0 +1,8 @@
+{
+  "name": "smo-ai-onboarding",
+  "version": "0.5.0",
+  "description": "SMO-AI Customer Onboarding Plugin. Universal Layer A plugin that converts customer inputs (URLs, references, memory dumps, files, interview answers) into structured brain context, GTM strategy, and customer-specific plugin BRDs. Phase 1 (Input Capture) fully built with 6 sub-skills (1a-1f) covering mini-intake, source extraction, memory mining, files request, interview generation, input validation. MENA-optimized with bilingual EN/AR support, RTL preservation, Khaleeji dialect handling, Telegram operator approval per ADR-001. Includes synthetic Acme-MENATech test fixture for stress testing without real-customer risk.",
+  "author": {
+    "name": "Mamoun Alamouri / SMOrchestra.ai"
+  }
+}
