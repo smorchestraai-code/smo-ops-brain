@@ -5,14 +5,19 @@
     "url": "https://smorchestra.ai"
   },
   "metadata": {
-    "description": "SMO Ops Brain Marketplace. Universal Layer A plugins for SMO-AI Customer Onboarding system. Phase 1 Input Capture available now. Phase 2-5 plus cockpit and plugin-creator coming.",
-    "version": "0.1.0"
+    "description": "SMO Ops Brain Marketplace. Universal Layer A plugins for SMO-AI Customer Onboarding system. Phase 1 (Input Capture) and Phase 2 (Brain Context) available. Phase 3-5 plus cockpit and plugin-creator coming.",
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "smo-ai-onboarding",
       "source": "./smo-ai-onboarding",
-      "description": "SMO-AI Customer Onboarding Plugin. Phase 1 Input Capture with 6 sub-skills (mini-intake, source extraction, memory mining, files request, interview, validator). MENA-optimized with bilingual EN/AR, Khaleeji dialect handling, Telegram operator approval. Includes Acme-MENATech synthetic test fixture."
+      "description": "Phase 1 Input Capture. 6 sub-skills (mini-intake, source extraction, memory mining, files request, interview, validator). MENA-optimized bilingual EN/AR. Includes Acme-MENATech synthetic test fixture."
+    },
+    {
+      "name": "smo-ai-brain",
+      "source": "./smo-ai-brain",
+      "description": "Phase 2 Brain Context. Converts locked Phase 1 inputs into the customer business brain (About-Me + Project + Config) at Class A. Zero-hallucination with traceability enforcement. Multi-project aware (shared About-Me across sibling projects). Dogfooded on Newmind-Coaching + Newmind-Wellness."
     }
   ]
 }
