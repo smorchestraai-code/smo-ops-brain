@@ -1,52 +1,37 @@
-# Multi-Project Master Mode
+# Multi-Project Organization (no shared brain)
 
 How smo-ai-brain handles a customer with multiple sibling projects.
+
+## Principle
+
+Each project brain is SELF-CONTAINED. There is NO shared customer brain layer. The founder presents differently per business (persona differs), so About-Me + Config diverge per project. The master folder is purely organizational.
 
 ## Structure
 
 ```
-<Customer>/                       (master folder = customer name)
-  _customer/                      (META layer - written ONCE, transcends projects)
-    About-Me/                     (5 founder files, from 2b)
-    Config/                       (profile-settings, cowork-instructions, language-preferences, from 2d)
-  <Customer>-<Project1>/          (full project structure)
+<Customer>/                       (master folder = organizational container only)
+  _customer/_customer-INDEX.md    (project roster, no brain)
+  <Customer>-<Project1>/
     1-ProjectBrain/
-      Project/                    (business files, from 2c)
-      Config/project-instruction.md  (project-level, from 2d)
+      About-Me/                   (5 files, project-framed persona)
+      Project/                    (~13 business files)
+      Config/                     (profile-settings, cowork-instructions, language-preferences, project-instruction)
   <Customer>-<Project2>/
-    1-ProjectBrain/ ...
+    1-ProjectBrain/ ...           (fully independent brain)
 ```
 
-## Altitude Rule
+## Altitude Rule (everything project-level)
 
-| Artifact | Skill | Altitude | Location |
-|---|---|---|---|
-| About-Me/* | 2b | CUSTOMER | `_customer/About-Me/` |
-| profile-settings.md | 2d | CUSTOMER | `_customer/Config/` |
-| cowork-instructions.md | 2d | CUSTOMER | `_customer/Config/` |
-| language-preferences.md | 2d | CUSTOMER | `_customer/Config/` |
-| project-instruction.md | 2d | PROJECT | `<project>/1-ProjectBrain/Config/` |
-| Project/* | 2c | PROJECT | `<project>/1-ProjectBrain/Project/` |
+| Artifact | Skill | Location |
+|---|---|---|
+| About-Me/* (5) | 2b | `<project>/1-ProjectBrain/About-Me/` |
+| Project/* (~13) | 2c | `<project>/1-ProjectBrain/Project/` |
+| project-instruction.md | 2c | `<project>/1-ProjectBrain/Config/` |
+| profile-settings, cowork-instructions, language-preferences | 2d | `<project>/1-ProjectBrain/Config/` |
 
-## Detection
+## Single vs Multi
 
-Multi-project mode when persona-and-priority.md has `multi-project: yes` AND names a sibling, OR the project folder sits inside a `<Customer>/` master alongside siblings.
+- Single project: customer folder = project folder (flat).
+- Multi project: master folder + project subfolders, each self-contained.
 
-## Single-project mode
-
-No `_customer/` layer. About-Me + all Config in the project's own 1-ProjectBrain/.
-
-## Consolidation step (the additional step for multi-project)
-
-After project brains built, 2f master assembly check:
-1. About-Me once to `_customer/About-Me/`
-2. Meta-config once to `_customer/Config/`
-3. No drift (founder facts identical across runs)
-4. No business bleed (project-scoped)
-5. project-instruction per project
-
-## Build order
-
-1. /brain-build Project1 -> About-Me + meta-Config hoisted to `_customer/` + Project1 files + Project1 project-instruction
-2. /brain-build Project2 -> meta already at `_customer/` (verify no drift) + Project2 files + Project2 project-instruction
-3. 2f master assembly check across both
+brain-start detects and organizes. No de-dup, no hoisting, no drift checks across siblings (nothing is shared). The only cross-project check 2f runs is no-business-bleed within each project.
