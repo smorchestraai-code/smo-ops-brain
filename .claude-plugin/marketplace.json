@@ -5,8 +5,8 @@
     "url": "https://smorchestra.ai"
   },
   "metadata": {
-    "description": "SMO Ops Brain Marketplace. Universal Layer A plugins for SMO-AI Customer Onboarding system. Phase 1 (Input Capture) and Phase 2 (Brain Context) available. Phase 3-5 plus cockpit and plugin-creator coming.",
-    "version": "0.2.0"
+    "description": "SMO Ops Brain Marketplace. Universal Layer A plugins for SMO-AI Customer Onboarding system. Phase 1 (Input Capture), Phase 2 (Brain Context), Phase 3 (GTM Strategy + Assets + Deployment) available. Phase 4-5 plus cockpit and plugin-creator coming.",
+    "version": "0.3.0"
   },
   "plugins": [
     {
@@ -17,7 +17,12 @@
     {
       "name": "smo-ai-brain",
       "source": "./smo-ai-brain",
-      "description": "Phase 2 Brain Context. Converts locked Phase 1 inputs into the customer business brain (About-Me + Project + Config) at Class A. Zero-hallucination with traceability enforcement. Multi-project aware (shared About-Me across sibling projects). Dogfooded on Newmind-Coaching + Newmind-Wellness."
+      "description": "Phase 2 Brain Context. Converts locked Phase 1 inputs into the customer business brain at Class A. Project-level About-Me + Project + project-instruction; 3 config files at customer master for multi-business customers. Zero-hallucination with traceability enforcement."
+    },
+    {
+      "name": "smo-ai-gtm-strategy",
+      "source": "./smo-ai-gtm-strategy",
+      "description": "Phase 3 GTM Strategy + Assets + Deployment + Trigger. Brain to playbook (1 of 13) to adaptive assets (voice-in-context) to GHL deployment across 7 surfaces to staged trigger with 3 Telegram gates. 19 skills. Zero hallucination via asset-source-map. MENA calendar aware (Ramadan, Eid, prayer times)."
     }
   ]
 }
