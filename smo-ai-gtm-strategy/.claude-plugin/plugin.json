@@ -1,7 +1,7 @@
 {
-  "name": "smo-ai-gtm-strategy",
+  "name": "3-smo-ai-gtm-strategy",
   "version": "0.1.0",
-  "description": "SMO-AI GTM Strategy Plugin (Phase 3). Converts a locked Phase 2 brain into a deployed, triggered GTM motion at Class A. Reads the customer brain, selects 1 of 13 playbooks, plans an adaptive asset list (counts driven by persona + complexity), generates assets with voice-in-context (brand-voice + communication-style + founder voice samples), scores them on type-specific rubrics including traceability and 8 coherence pairs, deploys to GHL across 7 surfaces (contacts, pipelines, sequences, funnels, WhatsApp, calendar, dashboard), and triggers via staged rollout (test contact then small batch then full) with Telegram operator approval at 3 gates (pack, trigger, scale). Everything project-level. Bilingual EN/AR with Khaleeji dialect and MENA cultural calendar awareness. Zero hallucination via asset-source-map (every asset element cites the brain field that drove it).",
+  "description": "SMO-AI GTM Strategy Plugin (Phase 3). Converts a locked Phase 2 brain into a deployed, triggered GTM motion at Class A. Selects 1 of 13 playbooks, plans an adaptive asset list, generates assets with voice-in-context (zero hallucination via asset-source-map), scores them on type-specific rubrics plus 8 coherence pairs and traceability, deploys to GHL across 7 surfaces, and triggers via staged rollout with 3 Telegram operator gates.",
   "author": {
     "name": "Mamoun Alamouri / SMOrchestra.ai"
   }

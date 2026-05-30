@@ -1,7 +1,7 @@
 {
-  "name": "smo-ai-brain",
+  "name": "2-smo-ai-brain",
   "version": "0.4.0",
-  "description": "SMO-AI Brain Context Plugin (Phase 2). Converts a locked Phase 1 input folder into a customer's complete business brain at Class A. Everything is project-level (About-Me, Project files, project-instruction) EXCEPT the 3 config files (profile-settings, cowork-instructions, language-preferences) which are the founder's single global cockpit identity, hoisted to the customer master for multi-business customers. Zero-hallucination, traceability-enforced. MENA-optimized bilingual EN/AR. Consumes smo-ai-onboarding Phase 1 output, produces 1-ProjectBrain/ ready for the customer Claude cockpit.",
+  "description": "Phase 2 Brain Context. Converts locked Phase 1 inputs into the customer business brain at Class A: project-level About-Me + Project + project-instruction, plus 3 config files at customer master (multi-business). Zero hallucination via traceability enforcement: every brain claim cites its Phase 1 source. MENA-optimized bilingual EN/AR.",
   "author": {
     "name": "Mamoun Alamouri / SMOrchestra.ai"
   }
